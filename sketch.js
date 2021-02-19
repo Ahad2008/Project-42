@@ -77,6 +77,9 @@ else if (gameState === END) {
   gameOver.visible = true;
   jungle.velocityX = 0;
   player.velocityY = 0;
+  player.visible = false;
+  FoodGroup.destroyEach();
+  obstacleGroup.destroyEach();
   obstacleGroup.setVelocityXEach(0);
   FoodGroup.setVelocityXEach(0);
   obstacleGroup.setLifetimeEach(-1);
